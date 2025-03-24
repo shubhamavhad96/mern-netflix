@@ -15,7 +15,7 @@ const [email, setEmail] = useState(emailValue || '');   // here the last part of
 const [username, setUsername] = useState('');
 const [password, setPassword] = useState('');
 
-const { signup } = useAuthStore();
+const { signup, isSigningUp } = useAuthStore();
 
 // below is the function to handle the sign up after user click on the sign up button
 
@@ -77,8 +77,10 @@ const { signup } = useAuthStore();
                         />
                     </div>
 
-                    <button className="w-full py-2 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700">
-                        Sign Up
+                    <button className="w-full py-2 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700"
+                        disabled={isSigningUp}
+                    >
+                        {isSigningUp ? "Loading..." : "Sign Up"}
                     </button>
 
                     <div className="text-center text-gray-400">
