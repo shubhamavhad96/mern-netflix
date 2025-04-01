@@ -16,7 +16,7 @@
 
 /* // this will change the background of our app to the image we just added this will set the background of the homepage */
 .hero-bg {
-    background-image:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.1)) ,url("hero.png");
+    background-image:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.1)) ,url("/hero.png");
     /* the abobe line will change the opacity of the image */
 }
 
